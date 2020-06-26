@@ -52,6 +52,9 @@ ENV ZSH_THEME agnoster
 # run the installation script  
 RUN wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O - | zsh || true
 
+# Experimental:
+RUN pip install pythran
+
 # Mount point of your $HOME
 RUN mkdir /work
 
